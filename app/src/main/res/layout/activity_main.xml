@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ECECE6">
+
+   <LinearLayout
+       android:layout_centerVertical="true"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center">
+
+       <TimePicker
+           android:headerBackground="#FF8A80"
+           android:numbersBackgroundColor="#FEFFFF"
+           android:id="@+id/timePicker"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"></TimePicker>
+
+       <EditText
+           android:id="@+id/textTask"
+           android:background="@drawable/text_round"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:gravity="center"
+           android:hint="TASK"/>
+
+       <Button
+           android:layout_marginTop="50dp"
+           android:id="@+id/buttonTask"
+           android:layout_width="150dp"
+           android:layout_height="40dp"
+           android:textColor="#ffff"
+           android:background="@drawable/button_round"
+           android:text="Set Task" />
+
+   </LinearLayout>
+
+</RelativeLayout>
