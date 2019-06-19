@@ -17,6 +17,7 @@
        <TimePicker
            android:headerBackground="#FF8A80"
            android:numbersBackgroundColor="#FEFFFF"
+           android:numbersSelectorColor="#FF8A80"
            android:id="@+id/timePicker"
            android:layout_width="match_parent"
            android:layout_height="wrap_content"></TimePicker>
