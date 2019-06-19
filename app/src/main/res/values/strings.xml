@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Re:MIND</string>
+    <string name="textButton">set task</string>
+    <string name="taskEdit">TASK</string>
+    <string name="autoTask">Wake up for Gym</string>
+    <string name="set_the_task">Set the Task</string>
 </resources>

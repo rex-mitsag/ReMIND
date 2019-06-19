@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tp = (TimePicker) findViewById(R.id.timePicker);
+        tp = findViewById(R.id.timePicker);
 
         findViewById(R.id.buttonTask).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
                 if (Build.VERSION.SDK_INT >= 23) {
                     cal.set(
-                            cal.get(cal.YEAR),
-                            cal.get(cal.MONTH),
-                            cal.get(cal.DAY_OF_MONTH),
+                            cal.get(Calendar.YEAR),
+                            cal.get(Calendar.MONTH),
+                            cal.get(Calendar.DAY_OF_MONTH),
                             tp.getHour(),
                             tp.getMinute(),
                             0
@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     cal.set(
-                            cal.get(cal.YEAR),
-                            cal.get(cal.MONTH),
-                            cal.get(cal.DAY_OF_MONTH),
+                            cal.get(Calendar.YEAR),
+                            cal.get(Calendar.MONTH),
+                            cal.get(Calendar.DAY_OF_MONTH),
                             tp.getCurrentHour(),
                             tp.getCurrentMinute(),
                             0
